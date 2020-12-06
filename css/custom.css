@@ -293,12 +293,12 @@ textarea{
   height: 10px;
   border-radius: 100%;
 }
-.carousel-indicators .active {
+.carousel-indicators .active, .owl-carousel .active span {
 	background-color: #049CF4 !important;
 }
-.owl-dot .active{
+/*.owl-dot .active{
 	background-color: #049CF4 !important;
-}
+}*/
 .feedback-indicators{
 	margin-bottom: -44px !important;
 }
