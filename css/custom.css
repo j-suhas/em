@@ -323,6 +323,10 @@ textarea{
 	text-align: center;
 	margin: 20px 0;
 }
+.product-carousel{
+	width: 80%;
+	margin: auto;
+}
 .portfolio-item{
 	margin-top: 50px;
 }
