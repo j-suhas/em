@@ -201,19 +201,19 @@ textarea{
 @media only screen and (max-width: 541px){
 
 	.slider-head {
-		font-size:13px;
-		line-height: 17px;
-	}
-	.type-animation{
 		font-size:15px;
 		line-height: 19px;
+	}
+	.type-animation{
+		font-size:18px;
+		line-height: 22px;
 	}
 	.carousel-caption{
 		top: 30%;
 	}
 	.ml3, .ml4{
-		font-size: 7px;
-		line-height: 11px;
+		font-size: 11px;
+		line-height: 15px;
 	}
 	.landing-btn{
 		padding: 7px 20px;
@@ -228,15 +228,15 @@ textarea{
 		line-height: 14px;
 	}
 	.type-animation{
-		font-size:13px;
-		line-height: 17px;
+		font-size:18px;
+		line-height: 22px;
 	}
 	.carousel-caption{
 		top: 13%;
 	}
 	.ml3, .ml4{
-		font-size: 5px;
-		line-height: 9px;
+		font-size: 10px;
+		line-height: 14px;
 	}
 	.landing-btn{
 		padding: 7px 15px;
@@ -256,15 +256,16 @@ textarea{
 		line-height: 50px;
 	}
 	.ml4, .ml3{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.caption-img-left, .caption-img-right {
 		top: 1%;
 	}
 	.type-animation{
-		height: 70px;
-		font-size: 24px;
-		line-height: 28px;
+		margin-top: 20px;
+		height: 100px;
+		font-size: 28px;
+		line-height: 32px;
 	}
 	.about-us-blockquote:before,
 	.about-us-blockquote:after {
@@ -273,6 +274,10 @@ textarea{
 }
 @media only screen and (max-width: 320px){
 
+	.slider-head {
+		font-size:13px;
+		line-height: 17px;
+	}
 	.about-us-blockquote:before{
 		margin: -42px -19px !important;
 	}
@@ -296,9 +301,6 @@ textarea{
 .carousel-indicators .active, .owl-carousel .active span {
 	background-color: #049CF4 !important;
 }
-/*.owl-dot .active{
-	background-color: #049CF4 !important;
-}*/
 .feedback-indicators{
 	margin-bottom: -44px !important;
 }
