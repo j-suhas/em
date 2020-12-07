@@ -53,28 +53,7 @@
 	<script src="js/modernizr.js"></script>
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			// https://dashboard.emailjs.com/admin/integration
-			emailjs.init('user_2vAHvKVqynjmLaicIzkgU');
-		})();
-	</script>
-	<script type="text/javascript">
-		window.onload = function () {
-			document.getElementById('contact-form').addEventListener('submit', function (event) {
-				event.preventDefault();
-				// generate a five digit number for the contactNumber variable
-				// this.contactNumber.value = Math.random() * 100000 | 0;
-				// these IDs from the previous steps
-				emailjs.sendForm('service_vy7tcgg', 'template_2tgzlua', this)
-					.then(function () {
-						console.log('SUCCESS!');
-					}, function (error) {
-						console.log('FAILED...', error);
-					});
-			});
-		}
-	</script>
+
 </head>
 
 <body class="one-page loading-overlay-showing" data-target="#header" data-spy="scroll" data-offset="100"
@@ -690,8 +669,8 @@
 											</div>
 										</div>
 										<button type="submit" id="button" value="Send"
-											class="btn btn-light-2 btn-outline btn-rounded font-weight-semibold btn-contact-us"
-											data-loading-text="Loading...">Send</button>
+										class="btn btn-light-2 btn-outline btn-rounded font-weight-semibold btn-contact-us"
+										data-loading-text="Loading...">Send</button>
 									</form>
 								</div>
 							</div>
@@ -857,6 +836,29 @@
 
 	<script type="text/javascript">
 	</script>
+
+<script type="text/javascript">
+	(function () {
+		// https://dashboard.emailjs.com/admin/integration
+		emailjs.init('user_2vAHvKVqynjmLaicIzkgU');
+	})();
+</script>
+<script type="text/javascript">
+	window.onload = function () {
+		document.getElementById('contact-form').addEventListener('submit', function (event) {
+			event.preventDefault();
+			// generate a five digit number for the contactNumber variable
+			// this.contactNumber.value = Math.random() * 100000 | 0;
+			// these IDs from the previous steps
+			emailjs.sendForm('service_vy7tcgg', 'template_2tgzlua', this)
+				.then(function () {
+					console.log('SUCCESS!');
+				}, function (error) {
+					console.log('FAILED...', error);
+				});
+		});
+	}
+</script>
 
 </body>
 
